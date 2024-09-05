@@ -1,7 +1,7 @@
 {{YAML_DATA}}
+level: PG
 mentor: false
 problem: false
-honours: false
 student: true
 ---
 

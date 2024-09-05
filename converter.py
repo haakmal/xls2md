@@ -18,11 +18,17 @@ def convert_to_md(xls_file, template_file, class_name, selected_radio, selected_
         # Create YAML front matter
         yaml_front_matter = "---\n"
         for column in columns:
-            yaml_front_matter += f"{column}: {row[column]}\n"
+            value = row.get(column, "")
+            if value:
+                if column == "aliases":
+                    # Add correct syntax for Obsidian
+                    yaml_front_matter += f"{column}:\n  - {value}\n"
+                else:
+                    yaml_front_matter += f"{column}: {value}\n"
         current_year = datetime.now().year
         yaml_front_matter += f"tags: {class_name}/{current_year}/{selected_radio}"
         # Add additional data for TITLE_DATA
-        title_m = f"# [[{class_name}]]\nTutor:: [[{selected_filename}]]"
+        title_m = f"# {row[columns[1]]}\n## [[{class_name}]]\nTutor:: [[{selected_filename}]]"
 
         # Read template file
         with open(template_file, 'r') as f:
