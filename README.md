@@ -92,7 +92,7 @@ python3 main.py
 
 This should start the GUI which then becomes self explanatory. Follow instructions selecting appropriate options and click the convert button. Each row from the spreadsheet will be extracted as individual MD files ready for your database!
 
-![XLS2MD GUI](https://i.ibb.co/zNzzZff/XLS2-MD-Converter.png)
+![XLS2MD GUI](https://i.postimg.cc/433mXcX7/SCR-20240905-nptv.png)
 
 <!-- CONTRIBUTING -->
 ## Contributing
