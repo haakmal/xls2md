@@ -72,14 +72,27 @@ There is no installation needed, you simply can clone the repo to a folder on yo
 ### Setup
 
 1. I have a template MD file for all my students, this is where I collect information I need and add to for instance their weekly reports, discussions with them, etc
-2. I have a spreadsheet of students with required information (name, class, email, etc) that is fetched from our LMS. The script extracts the heading of each column as YAML data for the MD files and each row being a student comes a separate file. The filename for my database requirements is set as the first column which in this case is an ID number.
+2. I have a spreadsheet of students with required information (name, class, email, etc) that is fetched from our LMS. The script extracts the heading of each column as YAML data for the MD files and each row becomes a separate student file. The filename for my database requirements is set as the first column which in this case is an ID number.
 3. I have a list of tutors that are assigned to a student, I keep them also as MD files for my database and the script fetches the file names from a folder I pick so I can assign the tutor to the students record.
 
 The *data.xlsx* is an example of how the spreadsheet should be prepared. In the *template* file there are sections for where data is added from the script. For my purposes I have it set in two places, you may need to tweak this to your requirements: `{{YAML_DATA}}` and `{{TITLE_DATA}}`.
 
 ### How to use
 
-Once I have everything collected i.e. spreadsheet, template, list of tutors in a folder, the GUI then becomes self explanatory. Follow instructions and select appropriate options and click the convert button. Each row from the spreadsheet will be extracted as individual MD files ready for my database!
+Once I have everything collected i.e. spreadsheet, template, list of tutors in a folder, run the script using a terminal; currently it can only be initiated from CLI. Follow these steps:
+
+1. Open a terminal
+2. Navigate to repo folder
+3. Depending on your version of Python start the program using one of these commands:
+
+```sh
+python main.py
+python3 main.py
+```
+
+This should start the GUI which then becomes self explanatory. Follow instructions selecting appropriate options and click the convert button. Each row from the spreadsheet will be extracted as individual MD files ready for your database!
+
+![](https://i.ibb.co/zNzzZff/XLS2-MD-Converter.png))
 
 <!-- CONTRIBUTING -->
 ## Contributing
