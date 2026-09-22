@@ -1,5 +1,10 @@
+> [!NOTE]
+> This project is no longer maintained. The new and improved version of this is now the [Student Record Manager](https://github.com/haakmal/student-record-manager) and is maintained separately.
+
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+
 <a name="readme-top"></a>
+
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
@@ -7,8 +12,6 @@
 *** Don't forget to give the project a star!
 *** Thanks again! Now go create something AMAZING! :D
 -->
-
-
 
 <!-- PROJECT SHIELDS -->
 <!--
@@ -18,6 +21,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -25,25 +29,27 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
 # [Excel to Markdown Converter](https://github.com/haakmal/xls2md)
+
 A quick (and rather specific) `XLS` to `MD` conversion tool for my local pedagogy management system.
 
 I'm improving programming skills as I go so please feel free to fork this repo and contribute, you can also: [Report a Bug](https://github.com/haakmal/xls2md/issues) / [Request Feature](https://github.com/haakmal/xls2md/issues)
 
 <!-- ABOUT THE PROJECT -->
+
 ## About this tool
 
 I've made this tool to support my own pedagogy management system that uses a local database made of Markdown files. I wanted a quick way to import student data to track locally. The database keeps me in touch with student trajectories and also helps with understanding where they are coming from, i.e. what courses/skills they have already picked up. I'm hoping to use this for my own post-human pedagogy research but that's another discussion :smile:.
 
-This tool is pretty barebones and is meant to give me a blank canvas for every student based off of their unique ID's. *I should mention that this tool is designed around the **University of New South Wales' (Australia)** system where I work, and if you plan to use it you will need to make adjustments where necessary*. That said, if you are from UNSW and find this useful, I'm glad I could have been of help!
+This tool is pretty barebones and is meant to give me a blank canvas for every student based off of their unique ID's. _I should mention that this tool is designed around the **University of New South Wales' (Australia)** system where I work, and if you plan to use it you will need to make adjustments where necessary_. That said, if you are from UNSW and find this useful, I'm glad I could have been of help!
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 [![Python][Python]][Python-url]
 
-This tool is made in Python and the code is open for scrutiny. Dependencies are required before you can use it from the CLI but installing a working copy of Python should be enough to run. To get a local copy up and running follow these simple example steps. *I'm working on an executable for later*
+This tool is made in Python and the code is open for scrutiny. Dependencies are required before you can use it from the CLI but installing a working copy of Python should be enough to run. To get a local copy up and running follow these simple example steps. _I'm working on an executable for later_
 
 ### Prerequisites
 
@@ -58,13 +64,15 @@ pip install pandas openpyxl
 ### Installation
 
 There is no installation needed, you simply can clone the repo to a folder on your system.
-   ```sh
-   git clone https://github.com/haakmal/xls2md.git
-   ```
 
-***PS.** I still haven't gotten around to making an executable. If anyone with more experience in programming is willing to help, or explain how to reduce the file size I am all ears!*
+```sh
+git clone https://github.com/haakmal/xls2md.git
+```
+
+**\*PS.** I still haven't gotten around to making an executable. If anyone with more experience in programming is willing to help, or explain how to reduce the file size I am all ears!\*
 
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
 **Please be advised that this tool is very specific for my needs and I would recommend if you are using this to tweak to your requirements**.
@@ -75,7 +83,7 @@ There is no installation needed, you simply can clone the repo to a folder on yo
 2. I have a spreadsheet of students with required information (name, class, email, etc) that is fetched from our LMS. The script extracts the heading of each column as YAML data for the MD files and each row becomes a separate student file. The filename for my database requirements is set as the first column which in this case is an ID number.
 3. I have a list of tutors that are assigned to a student, I keep them also as MD files for my database and the script fetches the file names from a folder I pick so I can assign the tutor to the students record.
 
-The *data.xlsx* is an example of how the spreadsheet should be prepared. In the *template* file there are sections for where data is added from the script. For my purposes I have it set in two places, you may need to tweak this to your requirements: `{{YAML_DATA}}` and `{{TITLE_DATA}}`.
+The _data.xlsx_ is an example of how the spreadsheet should be prepared. In the _template_ file there are sections for where data is added from the script. For my purposes I have it set in two places, you may need to tweak this to your requirements: `{{YAML_DATA}}` and `{{TITLE_DATA}}`.
 
 ### How to use
 
@@ -95,6 +103,7 @@ This should start the GUI which then becomes self explanatory. Follow instructio
 ![XLS2MD GUI](https://i.postimg.cc/433mXcX7/SCR-20240905-nptv.png)
 
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -108,13 +117,14 @@ Don't forget to give the project a star if you found this helpful! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
+
 ## Contact
 
 Dr Haider Ali Akmal - [Links](https://links.hakmal.com/)
@@ -123,6 +133,7 @@ Dr Haider Ali Akmal - [Links](https://links.hakmal.com/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/haakmal/xls2md.svg?style=for-the-badge
 [contributors-url]: https://github.com/haakmal/xls2md/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/haakmal/xls2md.svg?style=for-the-badge
